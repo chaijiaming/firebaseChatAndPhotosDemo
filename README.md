@@ -24,6 +24,6 @@ Add additional notes about how to deploy this on a live system
 
 ## Contributing
 
-Me - Jiaming Chai
-mhyz1n4 - Haoyuan Meng
+* Me - Jiaming Chai jiamingchai@yahoo.com
+* mhyz1n4 - Haoyuan Meng
 
