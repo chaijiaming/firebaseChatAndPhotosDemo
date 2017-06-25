@@ -172,6 +172,18 @@ class PublishPhotosController: UIViewController, UINavigationControllerDelegate,
         return view
     }()
     
+    let titleTextField: UITextField = {
+        let tf = UITextField()
+        tf.keyboardType = .twitter
+        tf.keyboardAppearance = .dark
+        tf.placeholder = "标题"
+        tf.clearButtonMode = .whileEditing
+        tf.layer.masksToBounds = true
+        tf.becomeFirstResponder()
+        tf.translatesAutoresizingMaskIntoConstraints = true
+        return tf
+    }()
+    
     let momentTextField: UITextField = {
         let tf = UITextField()
         tf.keyboardType = .twitter
@@ -179,7 +191,6 @@ class PublishPhotosController: UIViewController, UINavigationControllerDelegate,
         tf.placeholder = "在这里说点什么..."
         tf.clearButtonMode = .whileEditing
         tf.layer.masksToBounds = true
-        tf.becomeFirstResponder()
         tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
     }()

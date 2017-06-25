@@ -124,7 +124,12 @@ class ViewController: UITableViewController, TLPhotosPickerViewControllerDelegat
     }
     
     func usersListsTable(){
-        navigationController?.pushViewController(NewMessageController(), animated: true)
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        
+        layout.itemSize = CGSize(width: ((UIScreen.main.bounds.width) - 30) * 1/3 , height: (UIScreen.main.bounds.height * 1/12))
+        let interestPicker = InterestViewPickerControllerCollectionViewController(collectionViewLayout: layout)
+        navigationController?.pushViewController(interestPicker, animated: true)
     }
     
     //func setupImageView()

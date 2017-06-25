@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		043160061EEA957500EE3A3D /* PublishPhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043160051EEA957500EE3A3D /* PublishPhotosController.swift */; };
 		0431600C1EEFD0F400EE3A3D /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431600B1EEFD0F400EE3A3D /* PhotoPickerViewController.swift */; };
+		043160171EFA5CDC00EE3A3D /* InterestViewPickerControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043160151EFA5CDC00EE3A3D /* InterestViewPickerControllerCollectionViewController.swift */; };
 		044186D91ECC3ED300CEA341 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044186D81ECC3ED300CEA341 /* NewMessageController.swift */; };
 		044186DC1ECC504D00CEA341 /* UserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044186DB1ECC504D00CEA341 /* UserDatabase.swift */; };
 		0483D52B1EC9A3F600507A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D52A1EC9A3F600507A67 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		043160051EEA957500EE3A3D /* PublishPhotosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishPhotosController.swift; sourceTree = "<group>"; };
 		0431600B1EEFD0F400EE3A3D /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		043160151EFA5CDC00EE3A3D /* InterestViewPickerControllerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestViewPickerControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		044186D81ECC3ED300CEA341 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		044186DB1ECC504D00CEA341 /* UserDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDatabase.swift; sourceTree = "<group>"; };
 		0483D5271EC9A3F600507A67 /* firesbaseDemoChats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firesbaseDemoChats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				0483D52C1EC9A3F600507A67 /* ViewController.swift */,
 				0483D53D1EC9A52B00507A67 /* LoginController.swift */,
 				044186D81ECC3ED300CEA341 /* NewMessageController.swift */,
+				043160151EFA5CDC00EE3A3D /* InterestViewPickerControllerCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				0431600C1EEFD0F400EE3A3D /* PhotoPickerViewController.swift in Sources */,
 				043160061EEA957500EE3A3D /* PublishPhotosController.swift in Sources */,
 				044186D91ECC3ED300CEA341 /* NewMessageController.swift in Sources */,
+				043160171EFA5CDC00EE3A3D /* InterestViewPickerControllerCollectionViewController.swift in Sources */,
 				0483D52D1EC9A3F600507A67 /* ViewController.swift in Sources */,
 				0483D53E1EC9A52B00507A67 /* LoginController.swift in Sources */,
 				0483D52B1EC9A3F600507A67 /* AppDelegate.swift in Sources */,
