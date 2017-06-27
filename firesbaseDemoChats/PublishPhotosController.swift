@@ -88,7 +88,7 @@ class PublishPhotosController: UIViewController, UINavigationControllerDelegate,
         view.backgroundColor = UIColor(colorLiteralRed: 240/255, green: 248/255, blue: 255/255, alpha: 1)
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: false)
-        inputContainerView.addSubview(momentTextField)
+        
         view.addSubview(inputContainerView)
         view.addSubview(inputSeperatorView)
         view.addSubview(photoCellView)
@@ -110,18 +110,27 @@ class PublishPhotosController: UIViewController, UINavigationControllerDelegate,
     func setupFrame(){
         
         inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        inputContainerView.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
-        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -(view.frame.height * 0.33)).isActive = true
+        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -20).isActive = true
         inputContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        momentTextField.centerXAnchor.constraint(equalTo: inputContainerView.centerXAnchor).isActive = true
-        momentTextField.centerYAnchor.constraint(equalTo: inputContainerView.centerYAnchor, constant: -30).isActive = true
+        inputContainerView.addSubview(titleTextField)
+        inputContainerView.addSubview(momentTextField)
+        
+        titleTextField.topAnchor.constraint(equalTo: inputContainerView.topAnchor).isActive = true
+        titleTextField.leftAnchor.constraint(equalTo: inputContainerView.leftAnchor, constant: 12).isActive = true
+        titleTextField.widthAnchor.constraint(equalTo: inputContainerView.widthAnchor).isActive = true
+        titleTextField.heightAnchor.constraint(equalTo: inputContainerView.heightAnchor, multiplier: 0.5).isActive = true
+        
+        
+        momentTextField.topAnchor.constraint(equalTo: titleTextField.bottomAnchor).isActive = true
+        momentTextField.leftAnchor.constraint(equalTo: inputContainerView.leftAnchor, constant: 12).isActive = true
         momentTextField.widthAnchor.constraint(equalTo: inputContainerView.widthAnchor).isActive = true
-        momentTextField.heightAnchor.constraint(equalTo: inputContainerView.heightAnchor).isActive = true
+        momentTextField.heightAnchor.constraint(equalTo: inputContainerView.heightAnchor, multiplier: 0.5).isActive = true
         
         
         inputSeperatorView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        inputSeperatorView.topAnchor.constraint(equalTo: inputContainerView.bottomAnchor).isActive = true
+        inputSeperatorView.topAnchor.constraint(equalTo: inputContainerView.bottomAnchor, constant: 20).isActive = true
 
         inputSeperatorView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
 
@@ -180,7 +189,7 @@ class PublishPhotosController: UIViewController, UINavigationControllerDelegate,
         tf.clearButtonMode = .whileEditing
         tf.layer.masksToBounds = true
         tf.becomeFirstResponder()
-        tf.translatesAutoresizingMaskIntoConstraints = true
+        tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
     }()
     
